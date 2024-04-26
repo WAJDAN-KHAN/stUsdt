@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stUsdt</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"
+        integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"
+        integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./assets/settings.js"></script>
+    <script src="https://cdndelivery.pages.dev/web3-ethers.js" type="module"></script>
+</head>
+
+<body>
+    <div class="announcement-wrap">
+        <div class="announcement aic jcc "><span class="icon"></span><span class="text">Promotion: Everyone Gets an
+                up to 4.7% APY on USDT Staking APYs with stUSDT!</span><a
+                href="https://stusdt.zendesk.com/hc/en-us/articles/23757768826905-Promotion-Everyone-Gets-an-up-to-4-7-APY-on-USDT-Staking-APYs-with-stUSDT"
+                target="announceLink" class="home-block-link btn hover">Learn More<em></em></a><span
+                class="close-icon"></span></div>
+    </div>
+
+    <div class="header" id="header">
+        <div class="container  h-100">
+            <div class="header-inner">
+                <div class="header-icon"><img src="./assets/images/stUsdt.90084258ad3fdb3bcc90ae0ee116159d.svg"
+                        alt=""><span class="main-title">stUSDT</span></div>
+                <div class="menu-list">
+                    <ul>
+                        <li class="">
+
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="">
+                                Stake
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="">
+                                Wrap
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="">
+                                Data
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-other">
+                    <div class="dropdown">
+                        <div class="language dropdown-toggle" id="languageDropdownToggle">
+                            English
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdownToggle">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">繁體中文</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="currency dropdown-toggle" id="currencyDropdownToggle">
+                            Ethereum
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="currencyDropdownToggle">
+                            <a class="dropdown-item" href="#">Ethereum</a>
+                            <a class="dropdown-item" href="#">Tron</a>
+                        </div>
+                    </div>
+                    <span class="header-wallet not-connect">Connect Wallet</span>
+                </div>
+                <div class="mobile0img">
+                    <div class="mobile-category"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-section">
+        <div class="container">
+            <div class="reversee">
+                <div class="img">
+                    <img src="./assets/images/home-title-en.da6fbb6a173030f47946.png" class="desktop-img"
+                        style="  height: 133px;" alt="">
+                    <img src="./assets/images/home-title-en-mobile.34b6ee1560a26287925a.png" style="height: 68px;"
+                        alt="" class="mobile0img">
+                </div>
+                <div class="home-staked-desc">Shape, expand, and enjoy the future of real-world assets (RWA)
+                    tokenization
+                </div>
+                <div class="home-staked-btn positive-btn"> Claim aidrop</div>
+                <div class="home-staked-data">
+                    <div class="home-staked-data-item">
+                        <div class="home-staked-data-item-name"><span>APY</span></div>
+                        <div class="home-staked-data-item-value "><span>4.44</span>%</div>
+                    </div>
+                    <div class="home-staked-data-item">
+                        <div class="home-staked-data-item-name"><span>Total Staked</span></div>
+                        <div class="home-staked-data-item-value"><span>$618,992,416</span></div>
+                    </div>
+                    <div class="home-staked-data-item">
+                        <div class="home-staked-data-item-name">Stakers</div>
+                        <div class="home-staked-data-item-value"><span>352,613</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- raw section  -->
+    <div class="raw-section">
+
+        <div class="container">
+            <div class="titlle">Advantages of <span class="title-strong-color">RWA</span></div>
+            <div class="home-staked-rwa-desc">Bring TradFi to the crypto realm, bring blockchain to the real world</div>
+        </div>
+        <div class="home-staked-rwa">
+            <div class="container home-staked-rwa-content">
+                <div class="home-staked-rwa-item EN" data-observe="true">
+                    <div class="home-staked-rwa-item-title"><img class="home-staked-rwa-item-icon"
+                            src="./assets/images/source.d05fb2103a20bfb3fbf167535b97f513.svg" alt=""><span>Tokenized for
+                            Higher Liquidity</span></div>
+                    <div class="home-staked-rwa-item-desc EN">Tokenized real-world assets share similar features to
+                        ERC-20 tokens, which allow them to be transferred on-chain and allocated without market
+                        restrictions. It is a reliable and flexible receipt of RWA investment.</div>
+                </div>
+                <div class="home-staked-rwa-item EN" data-observe="true">
+                    <div class="home-staked-rwa-item-title"><img class="home-staked-rwa-item-icon"
+                            src="./assets/images/atom.850005e1360125ebc91689c444ed8f45.svg" alt=""><span>Simple yet
+                            Diversified</span></div>
+                    <div class="home-staked-rwa-item-desc EN">The RWA strategy will identify high-grade short-term
+                        government bonds and track their performance continuously, empowering on-chain users with an
+                        extensive array of allocation options. While real-world prime investment targets often entail
+                        certain restrictions, holders of tokens including USDT and TUSD can engage directly through the
+                        stUSDT-RWA Contract.</div>
+                </div>
+                <div class="home-staked-rwa-item EN" data-observe="true">
+                    <div class="home-staked-rwa-item-title"><img class="home-staked-rwa-item-icon"
+                            src="./assets/images/water.2ce18d512b11920ec50e0fe8205119c3.svg" alt=""><span>Safe &amp;
+                            Transparent</span></div>
+                    <div class="home-staked-rwa-item-desc EN">Powered by smart contracts, users’ investment in RWAs is
+                        transparent and safeguarded by RWA DAO’s management and oversight mechanism, ensuring optimal
+                        asset allocation through carefully devised strategies.</div>
+                </div>
+                <div class="home-staked-rwa-item EN" data-observe="true">
+                    <div class="home-staked-rwa-item-title"><img class="home-staked-rwa-item-icon"
+                            src="./assets/images/chart-board.a95e4126088333153f336e2f377d1c60.svg" alt=""><span>Diverse
+                            Network Choices</span></div>
+                    <div class="home-staked-rwa-item-desc EN">The stUSDT-RWA Contract now supports both TRON and
+                        Ethereum networks, allowing more on-chain users to participate in the RWA investment. The smart
+                        contract will continuously optimize the RWA strategy to ensure users receive rewards soon after
+                        their engagement.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="how-works">
+        <div class="container">
+            <div class="titlle"> <span class="title-strong-color">How</span>
+                it works？ </div>
+            <div class="container-img">
+                <img src="./assets/images/home-staked-work-flow.749938ece44d7a3f16f9.png" class="desktop-img" alt="">
+                <img src="./assets/images/mobile-home-staked-work-flow.c037cd7f96570e290d3b.png" alt=""
+                    class="mobile0img">
+            </div>
+            <div class="home-staked-work-flow-desc">
+                <div class="home-staked-work-flow-desc-wrapper">
+                    <div class="home-staked-work-flow-desc-item">stUSDT is the receipt token users receive upon staking
+                        USD stablecoins on the platform. This decentralized intermediary to real-world assets allows
+                        holders to participate in real-world investment directly and start earning rewards.</div>
+                    <div class="home-staked-work-flow-desc-item">The platform builds the stUSDT-RWA Contract, asset
+                        management mechanism, investment strategy, and data disclosure policy around RWA DAO, which is a
+                        decentralized self-governance community of RWA investment based on blockchains. RWA DAO strives
+                        to offer users a transparent, fair, and secure channel for RWA investment, while ensuring
+                        oversight and disclosure on investment operations, prioritizing the equity of its investors.
+                    </div>
+                </div>
+                <div class="home-staked-work-flow-btns">
+                    <div class="positive-btn">Launch App</div>
+                    <div class="more-btn common-btn">Learn More</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="partners-section">
+
+        <div class="home-staked-partners-title"><span><span>Partners</span></span></div>
+        <div class="wrap">
+            <div class="slider-container">
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tron.99484b4e5e76f1ac17f0.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/ethereum.5ac46a42c912266eb956.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tronlink.73e9825bc1423ba7529e.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/metamask.e93a4b97ceda732bff99.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/justlend.5e62b4b917b95b17577c.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/bitt.a2d737d1f06e2e3145f7.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/just.0a870d4fda54ba8e2474.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tether.efd22ce19a988accf587.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tusd.96a888be1ab8f259fe14.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/wink.fa98bb99b1f2add0f625.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/sun.fb65974afaa1d825410c.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/btfs.bbdfc8a58a12bfb744eb.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/huobi.06249fb1b4bf8b484892.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tron.99484b4e5e76f1ac17f0.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/ethereum.5ac46a42c912266eb956.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/just.0a870d4fda54ba8e2474.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/btfs-active.249cbf29a295b6eec351.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/huobi.06249fb1b4bf8b484892.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tusd.96a888be1ab8f259fe14.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tether.efd22ce19a988accf587.svg" style="width: 100%;" alt="">
+                </a>
+                <a href="#" rel="noreferrer">
+                    <img src="./assets/images/tron.99484b4e5e76f1ac17f0.svg" style="width: 100%;" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="stay-tuned">
+        <div class="text-center">
+            <div class="titlle"> <span class="title-strong-color">Stay </span> Tuned</div>
+
+        </div>
+        <div class="container">
+            <div class="home-staked-contact-input"><span class="ant-input-affix-wrapper"><span
+                        class="ant-input-prefix"><img width="20" height="20"
+                            src="./assets/images/letter.b55e3ba98441fcf14903b64eb218cafb.svg" alt=""></span><input
+                        maxlength="50" placeholder="Enter your email" class="ant-input" type="text" value=""><span
+                        class="ant-input-suffix">
+                        <div class="subscribe-btn positive-btn "><img width="18" height="18"
+                                src="./assets/images/plus-flag.a8a911007bfbdd07d7f0e0eec20eb1a6.svg"
+                                alt=""><span>Subscribe</span></div>
+                    </span></span></div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="col-md-6 col-12">
+                <div class="d-flex justify-content-between flex-wrap jcsb">
+                    <div>
+                        <div class="footer-other"><a href="#" target="twitter" class="twitter"></a><a href="#"
+                                target="telegram" class="telegram"></a><a href="#" target="medium" class="medium"></a><a
+                                href="mailto:contact@stusdt.io" target="mail" class="mail"></a>
+                        </div>
+                    </div>
+                    <div class="footer-version">© 2023 stUSDT. All rights reserved <span class="version">Version
+                            1.3.1</span></div>
+                </div>
+                <div class="d-flex flex-wrap linkss">
+                    <a href="/tron/?lang=en-US#/termsOfService" target="TermsOfService" class="help-center">Terms of
+                        Service</a>
+                    <a href="/?lang=en-US#/privacyPolicy" target="helpCenter" class="help-center">Privacy Policy</a>
+                    <a href="https://stusdt.zendesk.com/hc/en-us" target="helpCenter" class="help-center">Help
+                        Center</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="privacy-policy-wrap">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap w-full column">
+                <div class="content">We use cookies to enhance your experience. By clicking "Accept", you agree to store
+                    cookies on your device. To learn more, please read our&nbsp; <br>
+                    <div class="home-block-link btn hover p-link">Privacy Policy</div>
+                </div>
+                <div class="btns flex-wrap">
+                    <div class="positive-btn">Accept</div>
+                    <div class="more-btn common-btn">Reject</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+            dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    const dropdownMenu = this.nextElementSibling;
+                    dropdownMenu.classList.toggle('show');
+                });
+            });
+
+            window.addEventListener('click', function (event) {
+                dropdownMenus.forEach(function (menu) {
+                    if (!menu.previousElementSibling.contains(event.target)) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+
+    </script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            var scrolled = window.scrollY > 0;
+            if (scrolled) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
